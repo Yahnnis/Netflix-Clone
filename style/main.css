@@ -1,0 +1,139 @@
+/* reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* definição de variáveis de estilo */
+:root {
+   --vermelho: #e50914; 
+   --preto: #141414;
+}
+
+/* elementos base */
+
+body {
+   background: var(--preto);
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+}
+
+header .container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 30px;
+}
+
+header .logo {
+   color: var(--vermelho);
+   font-family: 'Arial Black', Times;
+   font-size: 40px;
+   margin-left: 5px;
+   padding-right: 20px;
+}
+
+header .menu-principal {
+   display: flex;
+   align-items: center;
+   /* padding-left: 30px; */
+}
+
+header .navegacao {
+   display: flex;
+   align-items: center;
+}
+
+.navegacao, .navegacao ul li{
+   align-items: center;
+}
+
+.navegacao ul {
+   list-style: none;
+   display: flex;
+}
+
+.navegacao-item {
+   display: none;
+}
+
+header .lupa {
+   /* padding-right: 30px; */
+   align-items: center;
+}
+
+header nav a {
+   text-decoration: none;
+   color: #aaa;
+   margin-right: 10px;
+}
+
+header nav a:hover {
+   color: #fff;
+}
+
+/* Série Principal */
+.serie-principal {
+   font-style: 16px;
+   background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)100%),  url("../img/capa_cobra.jpg");
+
+   height: 600px;
+   background-size: cover;
+   background-position: center;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+
+   padding-left: 30px;
+}
+
+.serie-principal .descricao {
+   width: 50%;
+   margin-top: 3px;
+   margin-bottom: 40px;
+}
+
+.serie-principal .titulo {
+   margin-top: 30px;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+   background-color: rgba(0,0,0,0.50);
+   border: none;
+   color: #fff;
+
+   padding: 15px;
+   border-radius: 5px;
+   margin-right: 15px;
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .3s ease all;
+}
+
+.botao:hover {
+
+   background-color: #fff;
+   color: #141414;
+}
+
+.botao i{
+   margin-right: 5px;
+}
+
+/* Configura tamanho das imagens do carrossel */
+.box-serie {
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+
+.navegacao .menu-mobile li {
+   display: none!important;
+}
